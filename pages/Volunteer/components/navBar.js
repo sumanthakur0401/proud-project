@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '@/styles/Vol_styles/navBar.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const navBar = () => {
   const router = useRouter();
@@ -24,6 +25,7 @@ const navBar = () => {
   };
   return (
     <div className={styles.navBarBox}>
+      <img className={styles.proudLogo} src='/assets/blueProudLogo.png'/>
       <div className={styles.buttonBox}>
         <p style={router.pathname === '/Volunteer/home' ? activeStyle : defaultStyle}>
             <Link className={styles.buttons} href="/Volunteer/home">Home</Link>

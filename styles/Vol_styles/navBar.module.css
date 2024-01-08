@@ -4,9 +4,14 @@
     height: 100%;
     border-right: 4px solid #E6E6E6;
 }
+.proudLogo{
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+}
 .buttonBox{
     width: 70%;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 .buttons{
     display: flex;

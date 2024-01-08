@@ -1,0 +1,97 @@
+.profileBox{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 60px;
+}
+
+.userProfile{
+    width: 70%;
+    display: block;
+    margin: 30px auto;
+}
+.userDp{
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    margin: 0 auto;
+}
+.userFullName{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #868686;
+    margin-top: 5px;
+}
+.userShortDetail{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #868686;
+}
+
+.profileBoxIconsButtons{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0px auto;
+}
+.Icons{
+    height: 30px; 
+    border-bottom: 4px solid white;  
+    transition: .2s ease;
+}
+.Icons:hover{
+    border-bottom: 4px solid #4EB4FF;  
+}
+
+.Box1{
+    margin: 10px auto;
+    width:70%;
+    height: 150px;
+    border: 4px solid #E6E6E6;
+    border-radius: 10px;
+}
+.Box2{
+    margin: 20px auto;
+    width:70%;
+    height: 150px;
+    border: 4px solid #E6E6E6;
+    border-radius: 10px;
+}
+.Box3{
+    margin: 10px auto;
+    width:70%;
+    height: 150px;
+    border: 4px solid #E6E6E6;
+    border-radius: 10px;
+}
+
+.shortLinks{
+    margin: 0 auto;
+    width: 70%;
+    word-wrap: break-word;
+    text-align: center;
+}
+.linksText{
+    margin: 8px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #868686;
+    margin-top: 5px;
+    transition: .2s ease;
+}
+.linksText:hover{
+    color: #4EB4FF;
+}
