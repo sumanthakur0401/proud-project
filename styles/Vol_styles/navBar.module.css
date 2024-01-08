@@ -1,0 +1,23 @@
+.navBarBox{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 4px solid #E6E6E6;
+}
+.buttonBox{
+    width: 70%;
+    margin: 100px auto;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    height: 50px;
+    padding-left:20%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}

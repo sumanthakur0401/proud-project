@@ -1,0 +1,51 @@
+.midSection{
+    padding-top: 30px;
+    position: relative;
+    margin: 0 350px;
+    width: 50%;
+}
+
+.forYouText{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #868686;
+}  
+.forYouSection hr{
+    border: 1px solid #E6E6E6;
+    height: 4px;
+    background-color: #E6E6E6;
+}
+
+.updateGreenBox{
+    margin: 30px auto;
+    width: 80%;
+    height: 150px;   
+    background-color: #51CA46;
+    border: 4px solid #12BC02;
+    border-radius: 10px;
+}
+.boxData{
+    margin: 0 auto;
+    width: 90%;
+}
+.boxDescription{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+}
+.ngoName{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+}
