@@ -1,0 +1,63 @@
+/* ThreeCards.module.css */
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* Align cards vertically */
+    align-items: center;
+  }
+  
+  .card {
+    height: 150px;
+    margin-bottom: 20px; /* Spacing between cards */
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+  }
+  
+  .card.active {
+    transform: scale(1.2); /* Larger scale for the active card */
+  }
+  
+  .card-1 {
+    width: 80%; 
+    opacity: 100%;
+    margin-top: 100px;
+    margin-bottom: 40px;/* Width of the top card */
+  }
+  
+  .card-2 {
+    width: 60%; 
+    opacity: 70%;/* 70% of the top card's width */
+  }
+  
+  .card-3 {
+    width: 40%;
+    opacity: 40%; /* 40% of the top card's width */
+  }
+  
+  /* Add a local class to the button */
+  .button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Adjust the local class in the selector */
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
