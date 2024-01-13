@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <Link href="/Volunteer/components/ScrollBar">Let's get started.</Link>
+          <Link href="/Volunteer/home">Let's get started.</Link>
         </div>
       </main>
     </>

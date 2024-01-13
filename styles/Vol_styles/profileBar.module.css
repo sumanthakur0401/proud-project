@@ -19,9 +19,8 @@
 }
 .userFullName{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #868686;
@@ -29,9 +28,8 @@
 }
 .userShortDetail{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: .8rem;
+    font-weight: 800;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #868686;
@@ -83,9 +81,8 @@
 .linksText{
     margin: 8px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: .7rem;
+    font-weight: 600;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #868686;

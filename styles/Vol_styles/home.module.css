@@ -5,11 +5,13 @@
     width: 50%;
 }
 
+/* For you section  */
+
 .forYouText{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #868686;
@@ -35,8 +37,8 @@
 .boxDescription{
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white;
@@ -44,8 +46,79 @@
 .ngoName{
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    color: white;
+}
+
+.downArrowIcon{
+    width: 30px;
+    opacity: 60%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .2s;
+}
+.downArrowIcon:hover{
+    opacity: 100%;
+}
+
+/* Near you section */
+
+.nearYouText{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #868686;
+    display: flex;
+    justify-content: center;
+}  
+.italic{
+    font-style: italic;
+    color: #868686;
+}
+.nearYouSection hr{
+    border: 1px solid #E6E6E6;
+    height: 4px;
+    background-color: #E6E6E6;
+}
+.nearYouBoxes{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.ngoBox{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    border: 4px solid #1C8FE4;
+    background-color: #75C4FF;
+}
+.buttonBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.viewAllButton{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    border: 4px solid #1C8FE4;
+    border-radius: 10px;
+    position: relative;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #1C8FE4;
+    cursor: pointer;
+    transition: .2s;
+}
+.viewAllButton:Hover{
+    background-color: #75C4FF;
     color: white;
 }
