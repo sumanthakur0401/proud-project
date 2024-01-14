@@ -44,9 +44,11 @@ const CardSection = () => {
                     <div className={styles.ngoLocation}>
                     Sec 32, Chandigarh<img className={styles.locationImg} src='/assets/locationWhite.png'/>
                     </div>
-                    <button className={styles.cardViewMoreButton}>
-                        More
-                    </button>
+                    <Link href="/Volunteer/expandedGreenCard">
+                          <button className={styles.cardViewMoreButton}>
+                          More
+                          </button> 
+                    </Link> 
                 </div>
 
             </div>
@@ -61,9 +63,11 @@ const CardSection = () => {
                     <div className={styles.ngoLocation}>
                     Sec 34, Chandigarh<img className={styles.locationImg} src='/assets/locationWhite.png'/>
                     </div>
-                    <button className={styles.cardViewMoreButton}>
-                        More
-                    </button>
+                    <Link href="/Volunteer/expandedGreenCard">
+                          <button className={styles.cardViewMoreButton}>
+                          More
+                          </button> 
+                    </Link> 
                 </div>
 
             </div>
@@ -80,9 +84,11 @@ const CardSection = () => {
                     <div className={styles.ngoLocation}>
                     Sec 11, Chandigarh<img className={styles.locationImg} src='/assets/locationWhite.png'/>
                     </div>
-                    <button className={styles.cardViewMoreButton}>
-                        More
-                    </button>
+                    <Link href="/Volunteer/expandedGreenCard">
+                          <button className={styles.cardViewMoreButton}>
+                          More
+                          </button> 
+                    </Link> 
                 </div>
 
             </div>
@@ -97,9 +103,13 @@ const CardSection = () => {
                     <div className={styles.ngoLocation}>
                     Sec 4, Chandigarh<img className={styles.locationImg} src='/assets/locationWhite.png'/>
                     </div>
-                    <button className={styles.cardViewMoreButton}>
-                        More
-                    </button>
+                    
+                        <Link href="/Volunteer/expandedGreenCard">
+                          <button className={styles.cardViewMoreButton}>
+                          More
+                          </button> 
+                        </Link> 
+                    
                 </div>
 
             </div>

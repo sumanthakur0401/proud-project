@@ -21,23 +21,56 @@ const profileBar = () => {
                 <a href='/'><img className={styles.Icons} src='/assets/help.png'/></a>
         </div>
         <div className={styles.Box1}>
-
+        <div className={styles.threeDotsBox}>
+            <div className={styles.boxText}>
+              Earn badges
+            </div>
+            <img className={styles.threeDots} src='/assets/threeDots.png'/>
+          </div>
+          <p className={styles.boxSubText}>Complete 9 more volunteer experiences to start earning badges.</p>
+          <div className={styles.badgesBox}>
+            <img className={styles.badge} src='/assets/brMedal.png'/>
+            <img className={styles.badge} src='/assets/slrMedal.png'/>
+            <img className={styles.badge} src='/assets/gldMedal.png'/>
+          </div>
         </div>
         <div className={styles.Box2}>
-
+          <div className={styles.threeDotsBox}>
+            <div className={styles.boxText}>
+              Upcoming Rewards
+            </div>
+            <img className={styles.threeDots} src='/assets/threeDots.png'/>
+          </div>
+          <p className={styles.boxSubText}>Volunteer and unlock rewards as a token of our gratitude.</p>
+          <div className={styles.rewardSection}>
+            <img className={styles.rewardBarImg} src='/assets/rewardBar.png'/>
+            <img className={styles.giftBox} src='/assets/gift.png'/>
+          </div>
         </div>
         <div className={styles.Box3}>
-
+        <div className={styles.threeDotsBox}>
+            <div className={styles.boxText}>
+              Get verified
+            </div>
+            <img className={styles.threeDots} src='/assets/threeDots.png'/>
+          </div>
+          <p className={styles.boxSubText}>You are so close to get verified. Click more to know more.</p>
+          <div className={styles.rewardSection}>
+            <button className={styles.boxMoreButton}>
+              More
+            </button>
+            <img className={styles.giftBox} src='/assets/verified.png'/>
+          </div>
         </div>
         <div className={styles.shortLinks}>
-            <a href="/" className={styles.linksText}> About</a>
-            <a href="/" className={styles.linksText}> Blog</a>
-            <a href="/" className={styles.linksText}> Store</a>
-            <a href="/" className={styles.linksText}> Efficacy</a>
-            <a href="/" className={styles.linksText}> Carrers</a>
-            <a href="/" className={styles.linksText}> Investors</a>
-            <a href="/" className={styles.linksText}> Terms</a>
-            <a href="/" className={styles.linksText}> Privacy</a>
+            <a href="" className={styles.linksText}> About</a>
+            <a href="" className={styles.linksText}> Blog</a>
+            <a href="" className={styles.linksText}> Store</a>
+            <a href="" className={styles.linksText}> Efficacy</a>
+            <a href="" className={styles.linksText}> Carrers</a>
+            <a href="" className={styles.linksText}> Investors</a>
+            <a href="" className={styles.linksText}> Terms</a>
+            <a href="" className={styles.linksText}> Privacy</a>
         </div>
     </div>
   )
