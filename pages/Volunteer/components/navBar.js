@@ -25,7 +25,9 @@ const navBar = () => {
   };
   return (
     <div className={styles.navBarBox}>
-      <img className={styles.proudLogo} src='/assets/blueProudLogo.png'/>
+      <a href='/Volunteer/aboutProud'>
+        <img className={styles.proudLogo} src='/assets/blueProudLogo.png'/>
+      </a>
       <div className={styles.buttonBox}>
         <p style={router.pathname === '/Volunteer/home' ? activeStyle : defaultStyle}>
             <Link className={styles.buttons} href="/Volunteer/home"><img className={styles.navIconHome} src="/assets/home.png"/>Home</Link>

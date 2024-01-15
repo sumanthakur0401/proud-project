@@ -1,0 +1,25 @@
+.tempNavDiv{
+    margin-top: 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navBar{
+    background-color: #ccf0ffd3;
+    height: 50px;
+    width: 50%;
+    border-radius: 200px;
+    border: 4px solid #4EB4FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logoImg{
+    width: 80px;
+}
+.githubIcon{
+    width: 25px;
+    cursor: pointer;
+}

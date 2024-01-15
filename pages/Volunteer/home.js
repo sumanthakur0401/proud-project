@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '@/styles/Vol_styles/home.module.css'
 import NavBar from '@/pages/Volunteer/components/navBar'
 import ProfileBar from '@/pages/Volunteer/components/profileBar'
-import CardSection from '@/pages/Volunteer/components/CardSection';
+import CardSection from '@/pages/Volunteer/components/CardSection'
 
 const home = () => {
   return (
