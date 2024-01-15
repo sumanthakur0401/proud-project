@@ -25,7 +25,7 @@ const aboutProud = () => {
         <div className={styles.secondProudSection}>
             
         </div>
-        <div className={styles.secondProudSection}>
+        <div className={styles.thirdProudSection}>
             
             </div>
     </div>

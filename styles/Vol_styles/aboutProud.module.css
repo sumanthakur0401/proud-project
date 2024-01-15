@@ -71,5 +71,16 @@
     margin: 0 auto;
     overflow: auto;
     border-top: 2px solid #ffffff;
-    border-bottom: 1px solid #4EB4FF; 
+    border-bottom: 2px solid #ffffff; 
+}
+
+.thirdProudSection{
+    width: 100%;
+    background-color: #CCF0FF;
+    height: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
