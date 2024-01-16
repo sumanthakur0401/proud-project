@@ -65,22 +65,162 @@
 }
 
 .secondProudSection{
+    background-image: url(../../public/assets/tranBlueProudLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1700px;
     width: 100%;
     background-color: #4393cd;
     height: 500px;
-    margin: 0 auto;
-    overflow: auto;
     border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff; 
+    display: flex;
+    justify-content: center;
+}
+.dataContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.demoBox{
+    height: 60%;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #88c6f3;
+    border: 4px solid #e4f3ff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+.demoText{
+    color: #bae2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 38px;
+    font-weight: 800;
+}
+.demoBoxButton{
+    width: 100px;
+    height: 40px;
+    background-color: #12bc0200;
+    border-radius: 10px;
+    border: 4px solid #e4f3ff;
+    color: #e4f3ff;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+.demoBoxButton:hover{
+    background-color: #e4f3ff;
+    color: #4393cd;
+}
+.aboutBoxData{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.boxText{
+    color: #bae2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.boxSubText{
+    color: #bae2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 70%;
 }
 
+/* background-color: #CCF0FF; */
 .thirdProudSection{
     width: 100%;
     background-color: #CCF0FF;
     height: 500px;
-    margin: 0 auto;
-    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+.thirdSectionDataContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thirdSectionDemoBox{
+    height: 60%;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #88c6f3;
+    border: 4px solid #e4f3ff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+.thirdSectionDemoText{
+    color: #bae2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 38px;
+    font-weight: 800;
+}
+.thirdSectionDemoBoxButton{
+    width: 100px;
+    height: 40px;
+    background-color: #12bc0200;
+    border-radius: 10px;
+    border: 4px solid #e4f3ff;
+    color: #e4f3ff;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+.thirdSectionDemoBoxButton:hover{
+    background-color: #e4f3ff;
+    color: #4393cd;
+}
+.thirdSectionAboutBoxData{
+    height: 100px;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.thirdSectionBoxText{
+    color: #80c0ee;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.thirdSectionBoxSubText{
+    color: #80c0ee;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 70%;
 }

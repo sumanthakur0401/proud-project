@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.button{
+    background-color: #bae2ffab;
+    position: fixed;
+    bottom: 100px;
+    transition: .2s ease;
+    border: 2px solid #bae2ff;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.button:hover{
+    border: 2px solid white;
+}
+.upIcon{
+    width: 40px;
+}
