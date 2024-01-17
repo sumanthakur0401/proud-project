@@ -21,6 +21,7 @@
     opacity: 70%;
 }
 .githubIcon{
+    margin-top: 5px;
     width: 25px;
     cursor: pointer;
 }

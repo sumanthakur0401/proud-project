@@ -3,8 +3,8 @@
     background-color: #CCF0FF;
     height: 500px;
     margin: 0 auto;
-    overflow: auto;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
 }
@@ -15,7 +15,7 @@
 }
 .describProudText{
     width: 50%;
-    color: #4EB4FF;
+    color: #88c6f3;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -147,8 +147,12 @@
     width: 70%;
 }
 
-/* background-color: #CCF0FF; */
+/* -------------------thrid proud Section---------------------- */
 .thirdProudSection{
+    background-image: url(../../public/assets/UxBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1800px;
     width: 100%;
     background-color: #CCF0FF;
     height: 500px;
@@ -162,42 +166,27 @@
     align-items: center;
 }
 .thirdSectionDemoBox{
-    height: 60%;
     width: 250px;
     border-radius: 10px;
-    background-color: #88c6f3;
-    border: 4px solid #e4f3ff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
-    padding-bottom: 20px;
-    padding-top: 40px;
-    align-items: center;
-    text-align: center;
 }
-.thirdSectionDemoText{
-    color: #bae2ff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 38px;
-    font-weight: 800;
-}
-.thirdSectionDemoBoxButton{
-    width: 100px;
-    height: 40px;
-    background-color: #12bc0200;
+.smallBoxes{
+    margin-bottom: 20px;
+    width: 70px;
+    height: 100px;
     border-radius: 10px;
-    border: 4px solid #e4f3ff;
-    color: #e4f3ff;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-    cursor: pointer;
-    transition: .2s;
+    background-color: #bae2ff;
+    border: 4px solid #88c6f3;
 }
-.thirdSectionDemoBoxButton:hover{
-    background-color: #e4f3ff;
-    color: #4393cd;
+.smallBoxesText{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 23px;    
+    font-weight: 600;
+    color: #88c6f3;
 }
 .thirdSectionAboutBoxData{
     height: 100px;
@@ -224,3 +213,132 @@
     margin-top: 10px;
     width: 70%;
 }
+
+
+/* -------------------fourth proud Section---------------------- */
+.fourthProudSection{
+    background-image: url(../../public/assets/UiBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    width: 100%;
+    background-color: #4393cd;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.fourthSectionDataContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fourthSectionAboutBoxData{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.fourthSectionBoxText{
+    color: #bae2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.fourthSectionBoxSubText{
+    color: #bae2ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 70%;
+}
+.scrollText{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;    
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    color: #88c6f3;
+    letter-spacing: 1px;
+}
+.fourthSectionDemoBox{
+    height: 60%;
+    width: 250px;
+}
+.demoScroll{
+    border: 4px solid #CCF0FF;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+.smallContainer{
+    height: 93%;
+    background-color: #92d1ff;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.smallBoxText{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;    
+    font-weight: 600;
+    color: #bae2ff;
+    letter-spacing: 1px;
+}
+.heart{
+    width: max-content;
+    height: 30px;
+    display: flex;
+    font-size: 26px;
+    color: #bae2ff; /* Initial color */
+    cursor: pointer;
+    align-items: center;
+}
+.red {
+    color: red; /* Color when clicked */
+}
+.scrollBoxesText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 23px;    
+    font-weight: 600;
+    color: #88c6f3;
+    letter-spacing: 1px;
+}
+.proudLogoWithText{
+    width: 100px;
+    margin-right: 10px;
+}
+.demoScroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.demoScroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #88c6f3;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+.demoScroll::-webkit-scrollbar-thumb {
+    background: #88c6f3;
+    border-radius: 10px;
+  }
