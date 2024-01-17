@@ -1,7 +1,6 @@
 .container{
     display: flex;
     justify-content: center;
-    
 }
 .button{
     background-color: #bae2ffab;
@@ -15,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    cursor: pointer;
 }
 .button:hover{
     border: 2px solid white;

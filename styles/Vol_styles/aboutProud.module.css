@@ -37,6 +37,9 @@
     text-transform: uppercase;
     font-weight: 800;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     cursor: pointer;
     transition: .2s ease;
@@ -54,6 +57,9 @@
     text-transform: uppercase;
     font-weight: 800;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     cursor: pointer;
     transition: .2s ease;
@@ -223,6 +229,8 @@
     background-size: 1800px;
     width: 100%;
     background-color: #4393cd;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff; 
     height: 500px;
     display: flex;
     justify-content: center;
@@ -342,3 +350,57 @@
     background: #88c6f3;
     border-radius: 10px;
   }
+
+  /* ---------------------last section------------------- */
+  .lastProudSection{
+    width: 100%;
+    background-color: #CCF0FF;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}  
+.lastBoxData{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lastText{
+    display: flex;
+    align-items: center;
+    color: #31a0f0;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 12px;
+}
+.lastProudLogo{
+    width: 55px;
+    padding: 3px;
+    padding-left: 3px;
+}
+.lastHeart{
+    padding-left: 2px;
+    color: rgb(241, 11, 11);
+}
+.buttonSection{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.lastButton{
+    display: flex;
+    align-items: center;
+    color: #31a0f0;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+.lastButton:hover{
+    color: #81cbff;;
+}

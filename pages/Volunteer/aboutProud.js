@@ -21,13 +21,12 @@ const aboutProud = () => {
             <img src="/assets/blueProudLogo.png" alt="Proud" className={styles.logoImg} />
             <h1 className={styles.describProudText}>Where NGOs meet eager volunteers, catalyzing change together.</h1>
             <div className={styles.buttonsSection}>
-                <button className={styles.exploreButton}>
+                <a href='/Volunteer/home' className={styles.exploreButton}>
                         Explore now!
-                </button>
-
-                <button className={styles.contactButton}>
+                </a>
+                <a href='' className={styles.contactButton}>
                     Contact us
-                </button>
+                </a>
             </div>
         </div>
         
@@ -119,11 +118,22 @@ const aboutProud = () => {
 
                 <div className={styles.fourthSectionAboutBoxData}>
                     <p className={styles.fourthSectionBoxText}>
-                        "Explore 'Moments' - a place where good vibes and great deeds meet!"
+                        "Explore 'Pr&#10084;ud Moments' - a place where good vibes and great deeds meet!"
                     </p>
                     <p className={styles.fourthSectionBoxSubText}>
-                        Visit 'Moments' to showcase your achievements! Share photos and videos of your volunteering, and see NGOs highlight impactful activities
+                        Visit 'Pr&#10084;ud Moments' to showcase your achievements! Share photos and videos of your volunteering, and see NGOs highlight impactful activities
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div className={styles.lastProudSection}>
+            <div className={styles.lastBoxData}>
+                <p className={styles.lastText}>Made by<img className={styles.lastProudLogo} src='/assets/blueProudLogo.png'/> with <span className={styles.lastHeart}> &#10084;</span>.</p>
+                <div className={styles.buttonSection}>
+                    <a href='/Volunteer/home' className={styles.lastButton}>Explore</a>
+                    <a href='https://github.com/sumanthakur0401/proud-project' className={styles.lastButton}>GitHub</a>
+                    <a className={styles.lastButton}>Contact</a>
                 </div>
             </div>
         </div>
