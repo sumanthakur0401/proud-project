@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <Link href="/Volunteer/home">Let's get started.</Link>
+          <a href="/Volunteer/home">Let's get started.</a>
         </div>
       </main>
     </>

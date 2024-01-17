@@ -76,7 +76,6 @@ const aboutProud = () => {
 
         <div className={styles.fourthProudSection}>
             <div className={styles.fourthSectionDataContainer}>
-
                 <div className={styles.fourthSectionDemoBox}>
                     <p className={styles.scrollText}>scroll here</p>
                     <div className={styles.demoScroll}>
