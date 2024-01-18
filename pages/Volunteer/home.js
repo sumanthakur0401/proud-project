@@ -42,7 +42,7 @@ const home = () => {
             <div className={styles.ngoBox}>
               <img className={styles.cardImg} src='/assets/eduCare.png'/>
               <p className={styles.cardText}>
-               ArriveSAFE
+               Arrive SAFE
               </p>
             </div>
           </div>

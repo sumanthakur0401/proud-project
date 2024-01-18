@@ -128,7 +128,7 @@ const aboutProud = () => {
 
         <div className={styles.lastProudSection}>
             <div className={styles.lastBoxData}>
-                <p className={styles.lastText}>Made by<img className={styles.lastProudLogo} src='/assets/blueProudLogo.png'/> with <span className={styles.lastHeart}> &#10084;</span>.</p>
+                <p className={styles.lastText}>By<img className={styles.lastProudLogo} src='/assets/blueProudLogo.png'/> with <span className={styles.lastHeart}> &#10084;</span>.</p>
                 <div className={styles.buttonSection}>
                     <a href='/Volunteer/home' className={styles.lastButton}>Explore</a>
                     <a href='https://github.com/sumanthakur0401/proud-project' className={styles.lastButton}>GitHub</a>

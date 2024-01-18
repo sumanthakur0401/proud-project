@@ -52,7 +52,7 @@
     background-color: #CCF0FF;
     width: 40%;
     height: 40px;
-    border: 2px solid #4EB4FF;
+    border: 4px solid #4EB4FF;
     color: #4EB4FF;
     text-transform: uppercase;
     font-weight: 800;
@@ -67,7 +67,7 @@
 .contactButton:hover{
     content: 'hello';
     background-color: #d4f0fd;
-    border: 2px solid #92d1ff;
+    border: 4px solid #92d1ff;
 }
 
 .secondProudSection{
@@ -379,7 +379,7 @@
 .lastProudLogo{
     width: 55px;
     padding: 3px;
-    padding-left: 3px;
+    padding-bottom: 4px;
 }
 .lastHeart{
     padding-left: 2px;
