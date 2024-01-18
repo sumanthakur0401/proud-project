@@ -1,5 +1,5 @@
 .profileBox{
-    position: absolute;
+    position: fixed;
     width: 25%;
     height: 100%;
     top: 0;

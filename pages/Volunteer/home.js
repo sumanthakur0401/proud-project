@@ -8,6 +8,7 @@ const home = () => {
   return (
     <>
       <NavBar />
+      <div className={styles.backGround}>
       <div className={styles.midSection}>
         <div className={styles.forYouSection}>
           <p className={styles.forYouText}>For You</p>
@@ -52,6 +53,8 @@ const home = () => {
         </div>
 
       </div>
+      </div>
+     
       <ProfileBar/>
     </>
   )
