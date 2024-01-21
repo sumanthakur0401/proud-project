@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/index.module.css'
 const inter = Inter({ subsets: ['latin'] })
