@@ -87,13 +87,15 @@
     border: 4px solid #4EB4FF;
     background-color: #ccf0ff63;
     transition: .2s ease;
+    color: black;
     cursor: pointer;
 }
-.ngoBox:hover{
+.ngoBox:hover {
     background-color: #4EB4FF;
-    .cardText{
-        color:rgb(255, 255, 255)
-    }
+}
+
+.ngoBox:hover .cardText {
+    color: rgb(255, 255, 255);
 }
 .cardImg{
     height: 150px;
