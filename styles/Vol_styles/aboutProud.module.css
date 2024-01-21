@@ -352,6 +352,74 @@
     border-radius: 10px;
   }
 
+/* ---------------------fifth section------------------- */
+.fifthProudSection{
+    background-image: url(../../public/assets/VrBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    width: 100%;
+    background-color: #CCF0FF;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.fifthSectionDataContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fifthSectionDemoBox{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.smallFifthBoxesText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 23px;    
+    font-weight: 600;
+    color: #88c6f3;
+}
+.fifthSectionAboutBoxData{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.fifthSectionBoxText{
+    color: #80c0ee;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.fifthSectionBoxSubText{
+    color: #80c0ee;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 80%;
+}
+.vrImage{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.fifthSectionProudLogo{
+    width: 100px;
+    margin: 5px;
+}
+
+
   /* ---------------------last section------------------- */
   .lastProudSection{
     width: 100%;

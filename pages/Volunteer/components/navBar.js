@@ -9,7 +9,7 @@ const navBar = () => {
 
   const activeStyle = {
     color: '#4EB4FF',
-    backgroundColor: '#CCF0FF',
+    backgroundColor: '#ccf0ff63',
     borderRadius: '10px',
     height: '50px',
     marginBottom: '20px',
@@ -17,11 +17,11 @@ const navBar = () => {
   };
 
   const defaultStyle = {
-    color: '#868686',
+    color: 'white',
     borderRadius: '10px',
     height: '50px',
     marginBottom: '20px',
-    border: '4px solid white', 
+    border: '4px solid transparent', 
   };
   return (
     <div className={styles.navBarBox}>

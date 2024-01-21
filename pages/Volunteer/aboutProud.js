@@ -55,7 +55,7 @@ const aboutProud = () => {
             <div className={styles.thirdSectionDataContainer}>
                 <div className={styles.thirdSectionAboutBoxData}>
                     <p className={styles.thirdSectionBoxText}>
-                        "Discover a variety of NGOs in one place for effortless volunteering opportunities."
+                        "Discover a variety of NGOs in one place for effortless volunteering opportunities"
                     </p>
                     <p className={styles.thirdSectionBoxSubText}>
                     Effortlessly explore a range of non-profit organizations all in one place. This centralized platform makes it easy for you to discover various volunteering opportunities, ensuring a seamless and meaningful engagement with causes that matter to you
@@ -122,6 +122,25 @@ const aboutProud = () => {
                     <p className={styles.fourthSectionBoxSubText}>
                         Visit 'Pr&#10084;ud Moments' to showcase your achievements! Share photos and videos of your volunteering, and see NGOs highlight impactful activities
                     </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div className={styles.fifthProudSection}>
+            <div className={styles.fifthSectionDataContainer}>
+                <div className={styles.fifthSectionAboutBoxData}>
+                    <p className={styles.fifthSectionBoxText}>
+                        "Immerse in virtual events, interact, and experience action from your screen"
+                    </p>
+                    <p className={styles.fifthSectionBoxSubText}>
+                        Experience events like never before on our virtual platform. Dive in, interact, and be part of the action—all from the comfort of your screen!
+                    </p>
+                </div>
+
+                <div className={styles.fifthSectionDemoBox}>
+                    <img className={styles.vrImage} src='/assets/vr.png'/>
+                    <p className={styles.smallFifthBoxesText}><img src='/assets/lighterProudLogo.png' className={styles.fifthSectionProudLogo}/>Connect</p>
                 </div>
             </div>
         </div>
