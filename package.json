@@ -19,6 +19,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
-    "sass": "^1.70.0"
+    "css-loader": "^6.9.1",
+    "postcss-loader": "^8.0.0",
+    "sass": "^1.70.0",
+    "style-loader": "^3.3.4"
   }
 }
