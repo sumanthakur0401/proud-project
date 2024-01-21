@@ -71,12 +71,18 @@ const home = () => {
         </div>
 
       </div>
-      <label className={styles.switch}>
-          <input type="checkbox" onChange={handleToggle} checked={isChecked}/>
-          <span className={styles.slider}></span>
-        </label>
       </div>
       <ProfileBar/>
+      <div className={styles.switchModeButton}>
+          <label className={styles.switch}>
+            <input type="checkbox" onChange={handleToggle} checked={isChecked}/>
+            <span className={styles.slider}></span>
+          </label>
+       </div>
+       <div className={styles.switchText}>
+          Switch 
+          Mode!
+       </div>
     </>
   )
 }
