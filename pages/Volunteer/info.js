@@ -1,13 +1,12 @@
 import React from 'react'
-import NavBar from '@/pages/Volunteer/components/navBar'
-import ProfileBar from '@/pages/Volunteer/components/profileBar'
+import Layout from './components/Layout'
+
 
 const info = () => {
   return (
-    <>
-        <NavBar/>
-        <ProfileBar/>
-    </>
+    <Layout>
+      
+    </Layout>
   )
 }
 

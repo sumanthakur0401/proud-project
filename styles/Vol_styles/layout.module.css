@@ -1,0 +1,95 @@
+.backGround {
+    background-image: url("../../public/assets/cloudBg.png");
+    background-repeat: no-repeat;
+    background-color: #86d6f8;
+    height: 1004px;
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.2s ease; /* Add a transition for smooth color change */
+  }
+  
+.backGroundBlack {
+    background-image: url("../../public/assets/starBg.png");
+    background-repeat: no-repeat;
+    background-color: #01425c; /* Change the background color when the switch is toggled */
+    height: 1004px;
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.2s ease; /* Add a transition for smooth color change */
+  }
+
+/* ------------------Darkmode---------------- */
+/* The switch - the box around the slider */
+.switchModeButton{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: fit-content;
+}
+.switchText{
+    position: fixed;
+    top: 58px;
+    right: 35px;
+    width: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    word-wrap: normal;
+    text-align: center;
+    line-height: 10px;
+}
+
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+    
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }

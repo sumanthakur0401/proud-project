@@ -1,8 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import styles from '@/styles/Vol_styles/home.module.css'
-import NavBar from '@/pages/Volunteer/components/navBar'
-import ProfileBar from '@/pages/Volunteer/components/profileBar'
 import CardSection from '@/pages/Volunteer/components/CardSection'
+import Layout from './components/Layout';
 
 const home = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -24,17 +23,13 @@ const home = () => {
     localStorage.setItem('darkMode', newChecked.toString());
   };
   return (
-    <>
-      <NavBar />
-      <div className={isChecked ? styles.backGroundBlack : styles.backGround}>
+    <Layout>
       <div className={styles.midSection}>
         <div className={styles.forYouSection}>
           <p className={styles.forYouText}>For You</p>
           <hr/>
           <CardSection />
         </div>
-
-
   {/*-------------------------------- Near You Section -----------------------------------*/}
         <div className={styles.nearYouSection}>
           <div className={styles.nearYouText}>Near You <p className={styles.italic}>(chandigarh)</p></div>
@@ -71,19 +66,7 @@ const home = () => {
         </div>
 
       </div>
-      </div>
-      <ProfileBar/>
-      <div className={styles.switchModeButton}>
-          <label className={styles.switch}>
-            <input type="checkbox" onChange={handleToggle} checked={isChecked}/>
-            <span className={styles.slider}></span>
-          </label>
-       </div>
-       <div className={styles.switchText}>
-          Switch 
-          Mode!
-       </div>
-    </>
+    </Layout>
   )
 }
 

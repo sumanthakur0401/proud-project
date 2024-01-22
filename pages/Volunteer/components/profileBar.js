@@ -63,7 +63,7 @@ const profileBar = () => {
           </div>
         </div>
         <div className={styles.shortLinks}>
-            <a href="" className={styles.linksText}> About</a>
+            <a href="/Volunteer/components/Layout" className={styles.linksText}> About</a>
             <a href="" className={styles.linksText}> Blog</a>
             <a href="" className={styles.linksText}> Store</a>
             <a href="" className={styles.linksText}> Efficacy</a>
