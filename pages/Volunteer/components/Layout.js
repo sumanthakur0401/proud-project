@@ -1,51 +1,54 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, createContext, useEffect } from 'react';
 import NavBar from './navBar';
 import ProfileBar from './profileBar';
 import styles from '../../../styles/Vol_styles/layout.module.css';
 
+// Create a context for dark mode state
+const DarkModeContext = createContext();
+
 const Layout = ({ children }) => {
-  const [isChecked, setIsChecked] = useState(false);
+  const isLocalStorageAvailable = typeof window !== 'undefined' && window.localStorage;
+  
+  const [isChecked, setIsChecked] = useState(() => {
+    if (isLocalStorageAvailable) {
+      const storedDarkMode = localStorage.getItem('darkMode');
+      return storedDarkMode ? JSON.parse(storedDarkMode) : false;
+    } else {
+      return false; // Fallback to default value if localStorage is not available
+    }
+  });
 
   useEffect(() => {
-    const storedDarkMode = localStorage.getItem('darkMode');
-    if (storedDarkMode) {
-      setIsChecked(storedDarkMode === 'true');
+    if (isLocalStorageAvailable) {
+      try {
+        localStorage.setItem('darkMode', JSON.stringify(isChecked));
+      } catch (error) {
+        console.error('Error saving dark mode to localStorage:', error);
+      }
     }
-  }, []);
+  }, [isChecked, isLocalStorageAvailable]);
 
   const handleToggle = () => {
-    setIsChecked(!isChecked);
-    localStorage.setItem('darkMode', isChecked ? 'false' : 'true');
+    setIsChecked((prevChecked) => !prevChecked);
   };
 
   return (
-    <div className={styles.wrapper}>
-      {isChecked && (
-        <div className={styles.backGroundBlack}>
-          <NavBar />
-          <ProfileBar />
-          <div className="content">{children}</div>
+    <DarkModeContext.Provider value={{ isChecked, toggleDarkMode: handleToggle }}>
+      <div className={isChecked ? styles.backGroundBlack : styles.backGround}>
+        <NavBar />
+        <ProfileBar />
+        <div className={styles.content} style={{ transition: 'background-color 0.3s ease-in-out' }}>
+          {children}
         </div>
-      )}
-      {!isChecked && (
-        <div className={styles.backGround}>
-          <NavBar />
-          <ProfileBar />
-          <div className="content">{children}</div>
-        </div>
-      )}
+      </div>
       <div className={styles.switchModeButton}>
         <label className={styles.switch}>
-          <input
-            type="checkbox"
-            onChange={handleToggle}
-            checked={isChecked}
-          />
+          <input type="checkbox" onChange={handleToggle} checked={isChecked} />
           <span className={styles.slider} />
         </label>
       </div>
       <div className={styles.switchText}>Switch Mode!</div>
-    </div>
+    </DarkModeContext.Provider>
   );
 };
 
