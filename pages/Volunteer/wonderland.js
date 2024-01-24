@@ -13,26 +13,27 @@ const wonderland = () => {
         <div className={styles.scrollMidSection}>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Environment</p>
-            <img className={styles.boxImage} src='/assets/illustration/environment.png'/>
+            <img className={styles.boxImage} alt='Environment illustration' src='/assets/illustration/environment.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Human Rights</p>
-            <img className={styles.boxImage} src='/assets/illustration/humanRights.png'/>
+            <img className={styles.boxImage} alt='HR illustration' src='/assets/illustration/humanRights.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Health</p>
-            <img className={styles.boxImage} src='/assets/illustration/health.png'/>
+            <img className={styles.boxImage} alt='Health illustration' src='/assets/illustration/health.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Education</p>
-            <img className={styles.boxImage} src='/assets/illustration/education.png'/>
+            <img className={styles.boxImage} alt='Education illustration' src='/assets/illustration/education.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Animal Welfare</p>
-            <img className={styles.boxImage} src='/assets/illustration/animalWelfare.png'/>
+            <img className={styles.boxImage} alt='AW illustration' src='/assets/illustration/animalWelfare.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Development</p>
+            <img className={styles.boxImage} alt='Development illustration' src='/assets/illustration/development.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Emergency Relief</p>
