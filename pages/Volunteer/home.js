@@ -1,27 +1,10 @@
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import styles from '@/styles/Vol_styles/home.module.css'
 import CardSection from '@/pages/Volunteer/components/CardSection'
 import Layout from './components/Layout';
 
 const home = () => {
-  const [isChecked, setIsChecked] = useState(false);
-
-  // Load the initial state from local storage on component mount
-  useEffect(() => {
-    const storedDarkMode = localStorage.getItem('darkMode');
-    if (storedDarkMode) {
-      setIsChecked(storedDarkMode === 'true');
-    }
-  }, []);
-
-  const handleToggle = () => {
-    // Toggle the state
-    const newChecked = !isChecked;
-    setIsChecked(newChecked);
-    
-    // Store the new state in local storage
-    localStorage.setItem('darkMode', newChecked.toString());
-  };
+ 
   return (
     <Layout>
       <div className={styles.midSection}>
