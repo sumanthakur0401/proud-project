@@ -35,7 +35,6 @@
     overflow: scroll;
     overflow-x: hidden;
 }
-
 .scrollMidSection::-webkit-scrollbar {
     width: 4px;
   }
@@ -50,6 +49,14 @@
     border-radius: 10px;
   }
 
+.wonderSubText{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
 .boxes{
     width: 30%;
     height: 350px;

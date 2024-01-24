@@ -9,8 +9,11 @@ const wonderland = () => {
       <div className={styles.midSection}>
         <p className={styles.wonderYouText}>NGO's Wonderland</p>
         <hr/>
-
+        
         <div className={styles.scrollMidSection}>
+          <p className={styles.wonderSubText}>
+            A hub where volunteers can explore various NGO categories, simplifying their search.
+          </p>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Environment</p>
             <img className={styles.boxImage} alt='Environment illustration' src='/assets/illustration/environment.png'/>
