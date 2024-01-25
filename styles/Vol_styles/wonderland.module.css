@@ -67,14 +67,25 @@
     cursor: pointer;
     transition: 0.2s ease;
 }
+.textAndButton{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
 .boxName{
     color: #4EB4FF;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 14px;
-    margin: 10px;
     transition: 0.2s ease;
+}
+.rightArrow{
+    width: 22px;
+    height: 22px;
+    opacity: 0%;
+    transition: .2s ease;
 }
 .boxImage{
     width: 100%;
@@ -84,5 +95,8 @@
 }
 .boxes:hover .boxName{
     color: white;
+}
+.boxes:hover .rightArrow{
+    opacity: 100%;
 }
 
