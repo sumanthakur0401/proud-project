@@ -32,7 +32,7 @@ const wonderland = () => {
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Animal Welfare</p>
-            <img className={styles.boxImage} alt='AW illustration' src='/assets/illustration/animalWelfare.png'/>
+            <img className={styles.boxImage} alt='AW illustration' src='/assets/illustration/webp/animalWelfare.webp'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Development</p>
