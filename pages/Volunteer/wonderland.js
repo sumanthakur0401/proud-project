@@ -56,6 +56,7 @@ const wonderland = () => {
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>LGBTQ+</p>
+            <img className={styles.boxImage} alt='Pride illustration' src='/assets/illustration/pride.png'/>
           </div>
         </div>
 
