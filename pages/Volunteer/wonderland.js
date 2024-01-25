@@ -40,18 +40,19 @@ const wonderland = () => {
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Emergency Relief</p>
+            <img className={styles.boxImage} alt='ER illustration' src='/assets/illustration/emergencyRelief.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Women's Rights</p>
+            <img className={styles.boxImage} alt='WR illustration' src='/assets/illustration/womenRights.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Children and Youth</p>
-          </div>
-          <div className={styles.boxes}>
-            <p className={styles.boxName}>Cultural</p>
+            <img className={styles.boxImage} alt='CY illustration' src='/assets/illustration/childrenYouth.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>Disability</p>
+            <img className={styles.boxImage} alt='Disability illustration' src='/assets/illustration/disability.png'/>
           </div>
           <div className={styles.boxes}>
             <p className={styles.boxName}>LGBTQ+</p>
