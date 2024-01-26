@@ -14,13 +14,26 @@ const CardSection = () => {
   const upArrowOpacity = currentCards === 2 ? 100 : 0;
   const downArrowOpacity = currentCards === 2 ? 0 : 100;
 
-  const scrollUpAnimation = {
-    transform: `translateY(${(currentCards - 1) * 5}%)`, // Adjust the translateY based on the currentCards
-    transition: 'transform 0.2s ease', // Apply a smooth transition effect
+  const upArrowClickHandler = () => {
+    if (upArrowOpacity > 0) {
+      nextCards();
+    }
   };
+
+  const downArrowClickHandler = () => {
+    if (downArrowOpacity > 0) {
+      nextCards();5
+    }
+  };
+
+  const scrollUpAnimation = {
+    transform: `translateY(${(currentCards - 1) * 5}%)`,
+    transition: 'transform 0.2s ease',
+  };
+
   const scrollDownAnimation = {
-    transform: `translateY(${(currentCards -2) * 5}%)`, // Adjust the translateY based on the currentCards
-    transition: 'transform 0.2s ease', // Apply a smooth transition effect
+    transform: `translateY(${(currentCards - 2) * 5}%)`,
+    transition: 'transform 0.2s ease',
   };
 
   return (
@@ -31,7 +44,7 @@ const CardSection = () => {
         id="upArrow"
         src='/assets/upArrow.png'
         style={{ opacity: upArrowOpacity }}
-        onClick={nextCards}
+        onClick={upArrowClickHandler}
       />
 
       <div style={scrollUpAnimation}>
@@ -108,15 +121,13 @@ const CardSection = () => {
                           <button className={styles.cardViewMoreButton}>
                           More
                           </button> 
-                        </Link> 
-                    
+                        </Link>  
                 </div>
-
             </div>
         </div>
       </div>  
 
-      <img src='/assets/downArrow.png' className={styles.downArrowIcon} id="downArrow" style={{ opacity: downArrowOpacity }} onClick={nextCards}/ >
+      <img src='/assets/downArrow.png' className={styles.downArrowIcon} id="downArrow" style={{ opacity: downArrowOpacity }} onClick={downArrowClickHandler}/>
 
     </div>
   );
