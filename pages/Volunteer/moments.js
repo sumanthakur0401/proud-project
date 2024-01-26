@@ -84,7 +84,9 @@ const Moments = () => {
               </div>
             </div>
           ))}
+          <p className={styles.endText}>Done for the day!!!</p>
         </div>
+        
       </div>
     </Layout>
   );
