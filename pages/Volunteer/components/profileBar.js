@@ -4,6 +4,27 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 
 const profileBar = () => {
+
+  const [isNotificationHovered, setIsNotificationHovered] = React.useState(false);
+  const [isMessageHovered, setIsMessageHovered] = React.useState(false);
+
+  const handleNotificationHover = () => {
+    setIsNotificationHovered(true);
+  };
+
+  const handleNotificationHoverOut = () => {
+    setIsNotificationHovered(false);
+  };
+
+  const handleMessageHover = () => {
+    setIsMessageHovered(true);
+  };
+
+  const handleMessageHoverOut = () => {
+    setIsMessageHovered(false);
+  };
+
+
   return (
     <div className={styles.profileBox}>
         <div className={styles.userProfile}>
@@ -12,13 +33,74 @@ const profileBar = () => {
             <p className={styles.userShortDetail}>CEO @PROUD</p>
         </div>
         <div className={styles.profileBoxIconsButtons}>
-                <a href='/'><img className={styles.Icons} src='/assets/notification.png'/></a>
+            <div
+              className={styles.notificationContainer}
+              onMouseEnter={handleNotificationHover}
+              onMouseLeave={handleNotificationHoverOut}
+            >
+              <a href=''>
+                <img className={styles.Icons} src='/assets/notification.png' alt="Notification" />
+              </a>
+              {isNotificationHovered && (
+                <div className={styles.notificationBox}>
+                  <p className={styles.notificationText}>Notifications</p>
+                  <hr />
+                  <p className={styles.noText}>No new notifications!</p>
+                </div>
+              )}
+            </div>
+
+            <div
+              className={styles.messageContainer}
+              onMouseEnter={handleMessageHover}
+              onMouseLeave={handleMessageHoverOut}
+            >
+              <a href=''>
+                <img className={styles.Icons} src='/assets/message.png' alt="Message" />
+              </a>
+              {isMessageHovered && (
+                <div className={styles.messageBox}>
+                  <p className={styles.messageText}>Messages</p>
+                  <hr />
+                  <p className={styles.noMessageText}>No new messages!</p>
+                </div>
+              )}
+            </div>
+
+            <div
+              className={styles.bookmarkContainer}
+              onMouseEnter={handleMessageHover}
+              onMouseLeave={handleMessageHoverOut}
+            >
+              <a href=''>
+                <img className={styles.Icons} src='/assets/bookmark.png' alt="Message" />
+              </a>
+              {isMessageHovered && (
+                <div className={styles.bookmarkBox}>
+                  <p className={styles.bookmarkText}>Bookmarks</p>
+                  <hr />
+                  <p className={styles.noBookmarkText}>No Bookmarks yet!</p>
+                </div>
+              )}
+            </div>
                 
-                <a href='/'><img className={styles.Icons} src='/assets/message.png'/></a>
-                
-                <a href='/'><img className={styles.Icons} src='/assets/bookmark.png'/></a>
-                
-                <a href='/'><img className={styles.Icons} src='/assets/help.png'/></a>
+            <div
+              className={styles.helpContainer}
+              onMouseEnter={handleMessageHover}
+              onMouseLeave={handleMessageHoverOut}
+            >
+              <a href=''>
+                <img className={styles.Icons} src='/assets/help.png' alt="Message" />
+              </a>
+              {isMessageHovered && (
+                <div className={styles.helpBox}>
+                  <p className={styles.helpText}>If you need help, visit contact us page or click the button below!</p>
+                  <button className={styles.contactUsButton}>
+                    contact us
+                  </button>
+                </div>
+              )}
+            </div>    
         </div>
         <div className={styles.Box1}>
         <div className={styles.threeDotsBox}>

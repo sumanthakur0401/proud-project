@@ -38,6 +38,9 @@ const navBar = () => {
         <p style={router.pathname === '/Volunteer/moments' ? activeStyle : defaultStyle}>
             <Link className={styles.buttons} href="/Volunteer/moments"><img className={styles.navIconHeart} src="/assets/heart.png"/>Moments</Link>
         </p>
+        <p style={router.pathname === '/Volunteer/connect' ? activeStyle : defaultStyle}>
+            <Link className={styles.buttons} href="/Volunteer/connect"><img className={styles.navIconHeart} src="/assets/vr.png"/>Connect</Link>
+        </p>
         <p style={router.pathname === '/Volunteer/info' ? activeStyle : defaultStyle}>
             <Link className={styles.buttons} href="/Volunteer/info"><img className={styles.navIconInfo} src="/assets/info.png"/>Info</Link>
         </p>
