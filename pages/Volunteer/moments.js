@@ -2,11 +2,24 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '@/styles/Vol_styles/moments.module.css';
 import Layout from './components/Layout';
+import BackToTopButton from './components/BackToTopButton';
+import Link from 'next/link';
+import HeartButton from './components/HeartButton';
 
 const Moments = () => {
   const [isMuted, setIsMuted] = useState(false);
   const [visibleVideoIndex, setVisibleVideoIndex] = useState(null);
   const videoRefs = useRef(Array.from({ length: 5 }, () => React.createRef()));
+
+  // Define video data with different names, photos, sources, and captions
+  const videoData = [
+    { username: 'Saarthi', photo: '/assets/tempDp/tempDp1.jpg', source: '/assets/videos/video1.mp4', caption: 'Dive into the experiences that shape our commitment to creating a better world. 🌏' },
+    { username: 'Suman Thakur', photo: '/assets/tempDp/tempDp2.jpeg', source: '/assets/videos/video2.mp4', caption: 'From passion to action: Behind the scenes of our dedicated volunteers. Together, we are a force for good! ✨' },
+    { username: 'Manan Tandon', photo: '/assets/tempDp/tempDp3.jpg', source: '/assets/videos/video3.mp4', caption: 'Behind each act of kindness lies a story of commitment. ' },
+    { username: 'Shailee Nagarkoti', photo: '/assets/tempDp/tempDp4.jpg', source: '/assets/videos/video4.mp4', caption: 'In the tapestry of life, volunteers are the vibrant threads of hope.' },
+    { username: 'Salam Zindgi', photo: '/assets/tempDp/tempDp5.jpg', source: '/assets/videos/video5.mp4', caption: '❤️' },
+  ];
+  const [likeCounts, setLikeCounts] = useState(Array(videoData.length).fill(0));
 
   useEffect(() => {
     const options = {
@@ -17,7 +30,7 @@ const Moments = () => {
 
     const observer = new IntersectionObserver(handleIntersection, options);
 
-    // Observe all videoRefs, not just the first 3
+    // Observe all videoRefs
     videoRefs.current.forEach((videoRef) => {
       observer.observe(videoRef.current);
     });
@@ -46,6 +59,13 @@ const Moments = () => {
     setIsMuted(!isMuted);
   };
 
+  const handleLikeClick = (index, liked) => {
+    const newLikeCounts = [...likeCounts];
+    newLikeCounts[index] = liked ? newLikeCounts[index] + 1 : newLikeCounts[index] - 1;
+    setLikeCounts(newLikeCounts);
+  };
+
+
   return (
     <Layout>
       <div className={styles.midSection}>
@@ -55,15 +75,18 @@ const Moments = () => {
         </div>
         <hr/>
         <div className={styles.scrollSection}>
-          {Array.from({ length: 5 }, (_, index) => (
+          {videoData.map((data, index) => (
             <div className={styles.items} key={index}>
               <div className={styles.nameDiv}>
                 <div className={styles.profileNameAndPicture}>
-                  <img src='/assets/tempDp.jpeg' className={styles.profilePicture}/>
-                  <p className={styles.userName}>Saarthi</p>
+                  <img src={data.photo} className={styles.profilePicture}/>
+                  <p className={styles.userName}>{data.username}</p>
                 </div>
                 <img className={styles.threeDots} src='/assets/threeDots.png'/>
               </div>
+
+              <p className={styles.caption}>{data.caption}</p>
+
               <div className={styles.videoContainer} key={index}>
                 <div className={styles.buttonDiv}>
                   <button className={styles.muteButton} onClick={toggleMute}>
@@ -78,15 +101,25 @@ const Moments = () => {
                   ref={videoRefs.current[index]} 
                   className={styles.videos}
                 >
-                  <source src={`/assets/videos/video${index + 1}.mp4`} type="video/mp4" />
+                  <source src={data.source} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                <HeartButton
+                  index={index}
+                  onClick={handleLikeClick}
+                  count={likeCounts[index]}
+                  isLiked={likeCounts[index] > 0}
+                />
               </div>
             </div>
           ))}
-          <p className={styles.endText}>Done for the day!!!</p>
+          <div className={styles.lastBox}>
+            <p className={styles.endText}>Done for the day!!!</p>
+            <Link href="/Volunteer/wonderland">
+            <button className={styles.exploreMoreButton}>Explore more!</button>
+            </Link>
+          </div>
         </div>
-        
       </div>
     </Layout>
   );
