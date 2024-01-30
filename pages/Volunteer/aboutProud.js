@@ -24,13 +24,11 @@ const aboutProud = () => {
 
   return (
   <>
-  
-    <TempNavBar/>
     <BackToTopButton/>
     {loading && <Preloader />}
       {!loading && (
     <div className={styles.screen}>
-    
+        <TempNavBar/>    
         <div className={styles.aboutProudSection}>
             <img src="/assets/blueProudLogo.png" alt="Proud" className={styles.logoImg} />
             <h1 className={styles.describProudText}>Where NGOs meet eager volunteers, catalyzing change together.</h1>
