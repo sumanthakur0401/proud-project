@@ -1,20 +1,34 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import styles from '@/styles/Vol_styles/aboutProud.module.css'
 import TempNavBar from '@/pages/Volunteer/components/tempNavBar'
 import BackToTopButton from './components/BackToTopButton'
+import Preloader from './components/Preloader';
 
 const aboutProud = () => {
 
-    const [isRed, setIsRed] = useState(false);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate loading for 2 second
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
+    return () => clearTimeout(timeout);
+  }, []);
+
+
+    const [isRed, setIsRed] = useState(false);
     const changeColor = () => {
         setIsRed((prev) => !prev);
     };
 
   return (
   <>
+  
     <TempNavBar/>
     <BackToTopButton/>
+    {loading && <Preloader />}
+      {!loading && (
     <div className={styles.screen}>
     
         <div className={styles.aboutProudSection}>
@@ -157,6 +171,7 @@ const aboutProud = () => {
         </div>
         
     </div>
+      )}
   </>
     
   )

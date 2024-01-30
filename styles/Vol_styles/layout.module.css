@@ -2,7 +2,8 @@
   background-image: url("../../public/assets/cloudBg.png");
   background-repeat: no-repeat;
   background-color: #7cd2f9;
-  height: 1004px;
+  background-size: 100%;
+  height: 100%;
   width: 100%;
   position: fixed;
   transition: all 0.2s ease;
@@ -12,7 +13,8 @@
   background-image: url("../../public/assets/starBgOne.png");
   background-repeat: no-repeat;
   background-color: #01425c;
-  height: 1004px;
+  background-size: 100%;
+  height: 100%;
   width: 100%;
   position: fixed;
   transition: all 0.2s ease;
@@ -24,6 +26,7 @@
   position: fixed;
   top: 20px;
   right: 30px;
+  height: 37px;
   width: fit-content;
 }
 
@@ -40,7 +43,6 @@
   text-align: center;
   line-height: 10px;
 }
-
 .switch {
   display: inline-block;
   width: 65px;
@@ -63,14 +65,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid white;
+  border: 4px solid rgba(255, 255, 255, 0.600);
   transition: background-color 0.4s ease, transform 0.4s ease; /* Added transition for transform */
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
+  height: 24px;
   width: 30px;
   left: 4px;
   bottom: 2px;
@@ -93,6 +95,3 @@ input:not(:checked) + .slider:before {
   background-repeat: no-repeat;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #124c7b;
-}

@@ -2,9 +2,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '@/styles/Vol_styles/moments.module.css';
 import Layout from './components/Layout';
-import BackToTopButton from './components/BackToTopButton';
 import Link from 'next/link';
 import HeartButton from './components/HeartButton';
+import Preloader from './components/Preloader';
 
 const Moments = () => {
   const [isMuted, setIsMuted] = useState(false);
@@ -22,23 +22,25 @@ const Moments = () => {
   const [likeCounts, setLikeCounts] = useState(Array(videoData.length).fill(0));
 
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 1.0, // Play only when fully visible
-    };
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0, // Play only when fully visible
+  };
 
-    const observer = new IntersectionObserver(handleIntersection, options);
+  const observer = new IntersectionObserver(handleIntersection, options);
 
-    // Observe all videoRefs
-    videoRefs.current.forEach((videoRef) => {
+  // Observe all videoRefs
+  videoRefs.current.forEach((videoRef) => {
+    if (videoRef.current) {
       observer.observe(videoRef.current);
-    });
+    }
+  });
 
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  return () => {
+    observer.disconnect();
+  };
+}, []);
 
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
@@ -65,9 +67,22 @@ const Moments = () => {
     setLikeCounts(newLikeCounts);
   };
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading for 2 seconds (adjust as needed)
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
 
   return (
     <Layout>
+      {loading && <Preloader />} {}
+      {!loading && (
       <div className={styles.midSection}>
         <div className={styles.topText}>
           <img className={styles.momentsTextLogo} src='/assets/whiteProudLogo.png'/>
@@ -115,12 +130,18 @@ const Moments = () => {
           ))}
           <div className={styles.lastBox}>
             <p className={styles.endText}>Done for the day!!!</p>
-            <Link href="/Volunteer/wonderland">
-            <button className={styles.exploreMoreButton}>Explore more!</button>
-            </Link>
+            
+            <div className={styles.buttonsSection}> 
+              <Link href="/Volunteer/wonderland">
+              <button className={styles.exploreMoreButton}>Explore more!</button>
+              </Link>
+
+              <button className={styles.goTopButton}>back to top</button>
+            </div>
           </div>
         </div>
       </div>
+      )}
     </Layout>
   );
 };

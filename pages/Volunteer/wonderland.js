@@ -1,12 +1,28 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import styles from '@/styles/Vol_styles/wonderland.module.css'
 import Layout from './components/Layout';
+import BackToTopButton from './components/BackToTopButton';
+import Preloader from './components/Preloader';
+
 
 const wonderland = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading for 2 second
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
   
   return (
     <Layout>
+      {loading && <Preloader />}
+      {!loading && (
       <div className={styles.midSection}>
+      <BackToTopButton/>
         <p className={styles.wonderYouText}>NGO's Wonderland</p>
         <hr/>
         
@@ -102,10 +118,10 @@ const wonderland = () => {
             </div>
             <img className={styles.boxImage} alt='Pride illustration' src='/assets/illustration/pride.webp'/>
           </div>
-
         </div>
-
+        
       </div>
+      )}
     </Layout>
   )
 }

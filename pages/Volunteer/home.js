@@ -1,12 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from '@/styles/Vol_styles/home.module.css'
 import CardSection from '@/pages/Volunteer/components/CardSection'
 import Layout from './components/Layout';
+import Preloader from './components/Preloader';
 
 const home = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading for 2 second
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
  
   return (
     <Layout>
+       {loading && <Preloader />}
+      {!loading && (
       <div className={styles.midSection}>
         <div className={styles.forYouSection}>
           <p className={styles.forYouText}>For You</p>
@@ -49,6 +62,7 @@ const home = () => {
         </div>
 
       </div>
+         )}
     </Layout>
   )
 }

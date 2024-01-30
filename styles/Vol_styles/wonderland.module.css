@@ -1,31 +1,40 @@
-.midSection{
-    padding-top: 30px;
-    position: relative;
-    margin: 0 350px;
-    width: 50%;
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* For you section  */
+/* Mid Section */
+.midSection {
+    padding-top: 30px;
+    margin: 0 400px;
+    width: 50%;
+    position: relative;
+}
 
-.wonderYouText{
+/* For You Section */
+.wonderYouText {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white;
-}  
-.midSection hr{
+}
+
+.midSection hr {
     border: 1px solid transparent;
     height: 4px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.600);
+    background-color: rgba(255, 255, 255, 0.6);
 }
-.scrollMidSection{
+
+/* Scroll Mid Section */
+.scrollMidSection {
     margin: 0 auto;
     width: 100%;
-    height: 945px;
+    height: 950px;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
@@ -35,21 +44,22 @@
     overflow: scroll;
     overflow-x: hidden;
 }
+
 .scrollMidSection::-webkit-scrollbar {
     width: 4px;
-  }
-  /* Track */
+}
+
+/* Scrollbar Styles */
 .scrollMidSection::-webkit-scrollbar-track {
     border-radius: 10px;
-  }
-  
-  /* Handle */
-.scrollMidSection::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.600);
-    border-radius: 10px;
-  }
+}
 
-.wonderSubText{
+.scrollMidSection::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.wonderSubText {
     color: white;
     text-transform: uppercase;
     font-weight: 600;
@@ -57,8 +67,10 @@
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
-.boxes{
-    width: 30%;
+
+/* Boxes Section */
+.boxes {
+    width: 270px;
     height: 350px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -67,13 +79,16 @@
     cursor: pointer;
     transition: 0.2s ease;
 }
-.textAndButton{
+
+/* Text and Button Section */
+.textAndButton {
     display: flex;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
 }
-.boxName{
+
+.boxName {
     color: #4EB4FF;
     text-transform: uppercase;
     font-weight: 600;
@@ -81,22 +96,28 @@
     font-size: 14px;
     transition: 0.2s ease;
 }
-.rightArrow{
+
+.rightArrow {
     width: 22px;
     height: 22px;
     opacity: 0%;
     transition: .2s ease;
 }
-.boxImage{
+
+/* Box Image Section */
+.boxImage {
     width: 100%;
 }
-.boxes:hover{
+
+/* Hover Effects */
+.boxes:hover {
     background-color: #4EB4FF;
 }
-.boxes:hover .boxName{
+
+.boxes:hover .boxName {
     color: white;
 }
-.boxes:hover .rightArrow{
+
+.boxes:hover .rightArrow {
     opacity: 100%;
 }
-
