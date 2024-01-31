@@ -43,6 +43,12 @@ const contact = () => {
             </label>
             
             <button className={styles.submitButton}>submit</button>
+
+            <hr className={styles.formDivider}/>
+            <p className={styles.subText}>Contact us through</p>
+            <div className={styles.socialMediaIconsSet}>
+              
+            </div>
           </form>
       </div>
       )}

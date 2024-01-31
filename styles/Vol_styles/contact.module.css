@@ -120,3 +120,17 @@ body {
         background-color: #4EB4FF;
         color: white;
     }
+    
+    .formDivider{
+      margin-top: 30px;
+      width: 65%;
+    }
+    .subText{
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 4px;
+        margin-top: 20px;
+    }
+    
